@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Octumos | Welcome</title>
+		<meta name="author" content="Hasan Badran">
+		<meta http-equiv="Content-Type" content="text/html">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Collaborative Intelligence">
+		<meta name="keywords" content="Octomus, Collaborative Intelligence">
+		<link rel="stylesheet" type="text/css" media="all" href="./css/style.css"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="parallax.min.js"></script>
+		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+  		<script type="text/javascript" src="jquery.scrollTo.js"></script>
+	</head>
+
+	<body>
+
+		<nav class="main-nav">
+			<li><a href="#home">HOME</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#services">SERVICES</a></li>
+			<li><a href="#contacts">CONTACTS</a></li>
+		</nav>
+
+		<header> 
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/Octomus-3D-.jpg" id="home">
+				<li><a href="#login">Log In</a></li>|<li><a href="#signup">Sign Up</a></li>
+			</div>
+		</header>
+			
+		
+		<div class="main">
+
+			<div id="about" class="container">
+	      		<h2>ABOUT US</h2>
+	      			<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac vulputate sem, sed laoreet odio. In eget pellentesque mauris, sed consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eu accumsan eros. Proin ac aliquam justo. Sed congue sollicitudin sodales. Aliquam at consequat nibh. Mauris finibus ipsum at pellentesque lobortis. Quisque dictum ligula massa, sed venenatis mauris suscipit ut. Ut eget pharetra magna. Mauris vel velit tincidunt nisi congue molestie vel ut tellus.
+					</p>
+					<p class="dark">
+						Ut vitae iaculis est. Integer eget lectus imperdiet, pellentesque libero et, ornare augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis maximus massa, non fermentum odio mollis ac. Etiam sit amet euismod tortor. Aenean quis sapien in arcu imperdiet pulvinar. Aliquam laoreet imperdiet nisl. Cras ac turpis a nibh pulvinar iaculis in et velit. Donec eu commodo justo, quis condimentum urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur laoreet ante tincidunt sem porttitor, non mattis ante aliquam. Etiam porta posuere augue at mattis. 
+					</p>
+	    	</div>
+
+	    	<div class="container">
+	    		<div class="line-seperator"></div>
+	    	</div>
+
+	    	<div id="services" class="container">
+	      		<h2>SERVICES</h2>
+	      		      <p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac vulputate sem, sed laoreet odio. In eget pellentesque mauris, sed consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eu accumsan eros. Proin ac aliquam justo. Sed congue sollicitudin sodales. Aliquam at consequat nibh. Mauris finibus ipsum at pellentesque lobortis. Quisque dictum ligula massa, sed venenatis mauris suscipit ut. Ut eget pharetra magna. Mauris vel velit tincidunt nisi congue molestie vel ut tellus.
+					</p>
+	    	</div>
+
+	    	<div class="container">
+	    		<div class="line-seperator"></div>
+	    	</div>
+
+	    	<div id="contacts" class="container">
+	      		<h2>CONTACTS</h2>
+	      		    <p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac vulputate sem, sed laoreet odio. In eget pellentesque mauris, sed consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eu accumsan eros. Proin ac aliquam justo. Sed congue sollicitudin sodales. Aliquam at consequat nibh. Mauris finibus ipsum at pellentesque lobortis. Quisque dictum ligula massa, sed venenatis mauris suscipit ut. Ut eget pharetra magna. Mauris vel velit tincidunt nisi congue molestie vel ut tellus.
+					</p>
+	    	</div>
+    	</div>
+
+    	<br><br><br>
+
+		<footer>
+			<p>Octomus, Copyright &copy; 2017</p>
+		</footer>
+
+
+		<script type="text/javascript">
+			$(function(){
+  				$(".main-nav a").click(function(e){
+    				e.preventDefault();
+    				$('html,body').scrollTo(this.hash,this.hash); 
+  				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			var  mn = $(".main-nav");
+    			mns = "main-nav-scrolled";
+    			hdr = $('header').height();
+
+			$(window).scroll(function() {
+  				if( $(this).scrollTop() > hdr ) {
+    				mn.addClass(mns);
+  				} else {
+    				mn.removeClass(mns);
+  				}
+			});
+		</script>
+
+
+	</body>  
+</html>
