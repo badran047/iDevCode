@@ -11,11 +11,14 @@
 		<link rel="stylesheet" type="text/css" media="all" href="./css/style.css"> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="parallax.min.js"></script>
+		<script type="text/javascript" src="./js/sliding.js"></script>
 		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
   		<script type="text/javascript" src="jquery.scrollTo.js"></script>
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 		<nav class="main-nav">
 			<li><a href="#home">HOME</a></li>
@@ -25,7 +28,7 @@
 		</nav>
 
 		<header> 
-			<div class="parallax-window" data-parallax="scroll" data-image-src="img/milky-way.jpg" id="home">
+			<div id="home" class="parallax-window" data-parallax="scroll" data-image-src="img/milky-way.jpg">
 				<li><h1>WELCOME to iDevCode</h1></li>
 			</div>
 		</header>
@@ -64,6 +67,14 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac vulputate sem, sed laoreet odio. In eget pellentesque mauris, sed consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eu accumsan eros. Proin ac aliquam justo. Sed congue sollicitudin sodales. Aliquam at consequat nibh. Mauris finibus ipsum at pellentesque lobortis. Quisque dictum ligula massa, sed venenatis mauris suscipit ut. Ut eget pharetra magna. Mauris vel velit tincidunt nisi congue molestie vel ut tellus.
 					</p>
 	    	</div>
+	    	<<br><br><br>
+	    	<div class="socialmedia-container">
+	    		<h3>FOLLOW ME</h3>
+    			<a href="https://www.facebook.com/HasanBadran" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/badran047" class="fa fa-twitter"></a>
+				<a href="https://www.youtube.com/user/hasanb2312" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+	    	</div>
     	</div>
 
     	<br><br><br>
@@ -94,6 +105,25 @@
     				mn.removeClass(mns);
   				}
 			});
+		</script>
+
+		<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
 		</script>
 
 

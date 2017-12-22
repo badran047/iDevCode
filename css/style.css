@@ -13,15 +13,28 @@ html{
 /* Global */
 .container{
 	padding-top: 90px;
-	width: 50%;
+	width: 65%;
 	margin:auto;
 	overflow: hidden;
 	position: center;
 }
 
+.socialmedia-container{
+	padding-top: 10px;
+	padding-bottom: 40px;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	position: center;
+	background: #333;
+	text-align: center;
+	margin-bottom: -225px;
+
+}
+
 .dark{
 	padding: 15px;
-	background: #35424a;
+	background: #3B5998;
 	color: #ffffff;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -33,7 +46,7 @@ header{
 
 
 .main-nav a {
-	color: #444;
+	color: #27408B;
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -76,7 +89,7 @@ li {
 	z-index: 150;
 	margin-bottom: -80px;
 	box-shadow: 0 2px 3px rgba(0,0,0, .4);
-	text-align: center; 
+	text-align: center;
 }
 
 .main-nav-scrolled {
@@ -98,7 +111,17 @@ h2 {
   	letter-spacing: normal;
   	margin-bottom: 20px;
   	padding: .1em 0;
-  	color: #444;
+  	color: #27408B;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.2em;
+  	letter-spacing: normal;
+  	color: white;
 	position: relative;
 	overflow: hidden;
 	white-space: nowrap;
@@ -119,7 +142,7 @@ footer{
 	margin-bottom: 0px;
 	color: #ffffff;
 	font-weight: normal;
-	background-color: #708090;
+	background-color: #3B5998;
 	text-align: center;
 	font-size: 10px;
 }
@@ -149,4 +172,65 @@ footer{
 		text-align: center;
 		width: 100%;
 	}
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #F5F5F5;
+  color: #999;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px #999;
+}
+
+#myBtn:hover {
+  opacity: 0.7;
+}
+
+ /* Style all font awesome icons */
+.fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    /*margin: 5px 2px;*/
+    position: center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
